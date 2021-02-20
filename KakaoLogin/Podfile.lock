@@ -1,0 +1,67 @@
+PODS:
+  - Alamofire (5.4.1)
+  - KakaoSDKAuth (2.3.2):
+    - KakaoSDKCommon (= 2.3.2)
+  - KakaoSDKCommon (2.3.2):
+    - Alamofire (~> 5.1)
+  - KakaoSDKUser (2.3.2):
+    - KakaoSDKAuth (= 2.3.2)
+    - KakaoSDKCommon (= 2.3.2)
+  - RxAlamofire (5.7.1):
+    - RxAlamofire/Core (= 5.7.1)
+  - RxAlamofire/Core (5.7.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxKakaoSDKAuth (2.3.2):
+    - KakaoSDKAuth (= 2.3.2)
+    - RxKakaoSDKCommon (= 2.3.2)
+  - RxKakaoSDKCommon (2.3.2):
+    - KakaoSDKCommon (= 2.3.2)
+    - RxAlamofire (~> 5.2)
+    - RxCocoa
+    - RxSwift
+  - RxKakaoSDKUser (2.3.2):
+    - KakaoSDKUser (= 2.3.2)
+    - RxKakaoSDKAuth (= 2.3.2)
+    - RxKakaoSDKCommon (= 2.3.2)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+
+DEPENDENCIES:
+  - RxKakaoSDKAuth
+  - RxKakaoSDKUser
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KakaoSDKAuth
+    - KakaoSDKCommon
+    - KakaoSDKUser
+    - RxAlamofire
+    - RxCocoa
+    - RxKakaoSDKAuth
+    - RxKakaoSDKCommon
+    - RxKakaoSDKUser
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  KakaoSDKAuth: 8db7c7a0561b137477bb984bbdab2eeda7745d23
+  KakaoSDKCommon: 4bb3981337921686948b7be094590f2edec5df87
+  KakaoSDKUser: e6c0017a41e87a94bdcd873d0178ad75be8126d4
+  RxAlamofire: 8e144c62dcc01d68dcb366bfc542eb6dd46bab78
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxKakaoSDKAuth: cd7f967c7f5b25aad6dddbc7c8c5b18bda634863
+  RxKakaoSDKCommon: b39782e4616487ee284eb55d300473597f52f552
+  RxKakaoSDKUser: 812561f21f5d8afca73824424112bf8e55dc1545
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+
+PODFILE CHECKSUM: 4b163b294ec4f523c05f1efa5ddd839173ae4fcc
+
+COCOAPODS: 1.10.1
