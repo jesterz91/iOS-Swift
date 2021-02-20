@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -58,7 +58,6 @@
 				FD6C9BF0ED1F17CAE1D36302 /* Pods-KakaoLogin.debug.xcconfig */,
 				F7F0F2C5650962B10BE10F0A /* Pods-KakaoLogin.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

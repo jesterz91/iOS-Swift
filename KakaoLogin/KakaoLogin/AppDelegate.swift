@@ -7,13 +7,18 @@
 
 import UIKit
 
+import RxKakaoSDKCommon
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Kakao SDK 초기화
+        RxKakaoSDKCommon.initSDK(appKey: "NATIVE_APP_KEY")
+        
         return true
     }
 

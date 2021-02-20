@@ -7,7 +7,15 @@
 
 import UIKit
 
+import RxSwift
+import KakaoSDKAuth
+import RxKakaoSDKAuth
+import KakaoSDKUser
+import RxKakaoSDKUser
+
 final class ViewController: UIViewController {
+    
+    private var disposeBag = DisposeBag()
     
     private lazy var loginButton: UIImageView = {
         let view = UIImageView(image: .kakao_login)
@@ -30,10 +38,74 @@ final class ViewController: UIViewController {
         ])
     }
     
-    @objc func login() {
-        print("login to kakao")
+    @objc private func login() {
+        // 카카오톡 설치 여부 확인
+        if (AuthApi.isKakaoTalkLoginAvailable()) {
+            loginWithKakaoTalk() // 카카오톡을 실행하여 로그인을 진행
+        } else {
+            loginWithKakaoAccount() // 기본 웹 브라우저를 사용하여 로그인을 진행
+        }
     }
     
+    private func loginWithKakaoTalk() {
+        AuthApi.shared.rx.loginWithKakaoTalk()
+            .subscribe(onNext:{ (oauthToken) in
+                print("loginWithKakaoTalk() success.")
+                
+                self.requestUserInfo()
+                _ = oauthToken
+            }, onError: {error in
+                print(error)
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    private func loginWithKakaoAccount() {
+        AuthApi.shared.rx.loginWithKakaoAccount()
+            .subscribe(onNext:{ (oauthToken) in
+                print("loginWithKakaoAccount() success.")
+                
+                self.requestUserInfo()
+                _ = oauthToken
+            }, onError: {error in
+                print(error)
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    private func requestUserInfo() {
+        UserApi.shared.rx.me()
+            .subscribe (onSuccess:{ user in
+                dump(user)
+            }, onError: {error in
+                print(error)
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    private func logout() {
+        UserApi.shared.rx.logout()
+            .subscribe(onCompleted:{
+                print("logout() success.")
+            }, onError: {error in
+                print(error)
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    private func unlink() {
+        UserApi.shared.rx.unlink()
+            .subscribe(onCompleted:{
+                print("unlink() success.")
+            }, onError: {error in
+                print(error)
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    deinit {
+        disposeBag = DisposeBag()
+    }
 }
 
 #if DEBUG
