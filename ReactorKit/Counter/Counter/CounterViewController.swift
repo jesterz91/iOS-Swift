@@ -87,7 +87,7 @@ extension CounterViewController: View {
     func bind(reactor: CounterReactor) {
         // Action
         plusButton.rx.tap
-            .map { Reactor.Action.increase }
+            .map { CounterReactor.Action.increase }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
 
