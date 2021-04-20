@@ -9,7 +9,7 @@ import Foundation
 
 import ReactorKit
 
-final class MainReactor: Reactor {
+final class CounterReactor: Reactor {
 
     enum Action {
         case increase

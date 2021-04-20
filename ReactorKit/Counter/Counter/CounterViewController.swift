@@ -10,7 +10,7 @@ import UIKit
 import ReactorKit
 import RxCocoa
 
-final class MainViewController: UIViewController {
+final class CounterViewController: UIViewController {
 
     var disposeBag: DisposeBag = DisposeBag()
 
@@ -40,7 +40,7 @@ final class MainViewController: UIViewController {
         return view
     }()
     
-    init(reactor: MainReactor) {
+    init(reactor: CounterReactor) {
         super.init(nibName: nil, bundle: nil)
         self.reactor = reactor
     }
@@ -82,9 +82,9 @@ final class MainViewController: UIViewController {
     }
 }
 
-extension MainViewController: ReactorKit.View {
+extension CounterViewController: View {
 
-    func bind(reactor: MainReactor) {
+    func bind(reactor: CounterReactor) {
         // Action
         plusButton.rx.tap
             .map { Reactor.Action.increase }
@@ -92,7 +92,7 @@ extension MainViewController: ReactorKit.View {
             .disposed(by: disposeBag)
 
         minusButton.rx.tap
-            .map { MainReactor.Action.decrease }
+            .map { CounterReactor.Action.decrease }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
 

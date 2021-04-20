@@ -10,10 +10,10 @@
 		125677CF288B2FFDD6A54743 /* Pods_Counter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4058CF74C2C71793E4970401 /* Pods_Counter.framework */; };
 		9B8FB7462628A803003BA148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8FB7452628A803003BA148 /* AppDelegate.swift */; };
 		9B8FB7482628A803003BA148 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8FB7472628A803003BA148 /* SceneDelegate.swift */; };
-		9B8FB74A2628A803003BA148 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8FB7492628A803003BA148 /* MainViewController.swift */; };
+		9B8FB74A2628A803003BA148 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8FB7492628A803003BA148 /* CounterViewController.swift */; };
 		9B8FB74F2628A804003BA148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B8FB74E2628A804003BA148 /* Assets.xcassets */; };
 		9B8FB7522628A804003BA148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B8FB7502628A804003BA148 /* LaunchScreen.storyboard */; };
-		9B8FB75F2628A9DD003BA148 /* MainReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8FB75E2628A9DD003BA148 /* MainReactor.swift */; };
+		9B8FB75F2628A9DD003BA148 /* CounterReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8FB75E2628A9DD003BA148 /* CounterReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +22,11 @@
 		9B8FB7422628A803003BA148 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8FB7452628A803003BA148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B8FB7472628A803003BA148 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9B8FB7492628A803003BA148 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9B8FB7492628A803003BA148 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		9B8FB74E2628A804003BA148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B8FB7512628A804003BA148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B8FB7532628A804003BA148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B8FB75E2628A9DD003BA148 /* MainReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReactor.swift; sourceTree = "<group>"; };
+		9B8FB75E2628A9DD003BA148 /* CounterReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReactor.swift; sourceTree = "<group>"; };
 		E98C1261FAC2338DF2E5A452 /* Pods-Counter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Counter.debug.xcconfig"; path = "Target Support Files/Pods-Counter/Pods-Counter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,8 +73,8 @@
 			children = (
 				9B8FB7452628A803003BA148 /* AppDelegate.swift */,
 				9B8FB7472628A803003BA148 /* SceneDelegate.swift */,
-				9B8FB75E2628A9DD003BA148 /* MainReactor.swift */,
-				9B8FB7492628A803003BA148 /* MainViewController.swift */,
+				9B8FB75E2628A9DD003BA148 /* CounterReactor.swift */,
+				9B8FB7492628A803003BA148 /* CounterViewController.swift */,
 				9B8FB74E2628A804003BA148 /* Assets.xcassets */,
 				9B8FB7502628A804003BA148 /* LaunchScreen.storyboard */,
 				9B8FB7532628A804003BA148 /* Info.plist */,
@@ -204,8 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B8FB74A2628A803003BA148 /* MainViewController.swift in Sources */,
-				9B8FB75F2628A9DD003BA148 /* MainReactor.swift in Sources */,
+				9B8FB74A2628A803003BA148 /* CounterViewController.swift in Sources */,
+				9B8FB75F2628A9DD003BA148 /* CounterReactor.swift in Sources */,
 				9B8FB7462628A803003BA148 /* AppDelegate.swift in Sources */,
 				9B8FB7482628A803003BA148 /* SceneDelegate.swift in Sources */,
 			);
