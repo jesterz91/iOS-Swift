@@ -22,7 +22,7 @@ final class MenuTableFooterView: BaseView {
         addSubview(priceLabel)
     }
     
-    override func makeConstraints() {
+    override func makeConstraint() {
         NSLayoutConstraint.activate([
             priceLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             priceLabel.centerYAnchor.constraint(equalTo: centerYAnchor)

@@ -36,11 +36,11 @@ final class MenuViewModel: BaseViewModel {
         self.menuService = service
     }
 
-    func fetchMenus() {        
+    func fetchMenus() {
         menuService.request(.menus, type: MenuResponse.self)
-            .do(onSubscribe: { [weak self] in self?.loadingRelay.accept(true)} )
-            .do(onSuccess: { [weak self] _ in self?.loadingRelay.accept(false)} )
-            .do(onError: { [weak self] _ in self?.loadingRelay.accept(false)} )
+            .do(onSubscribe: { [weak self] in self?.loadingRelay.accept(true) })
+            .do(onSuccess: { [weak self] _ in self?.loadingRelay.accept(false) })
+            .do(onError: { [weak self] _ in self?.loadingRelay.accept(false) })
             .map { $0.menus.map { Menu.fromMenuItem(item: $0) } }
             .subscribe(onSuccess: menuRelay.accept(_:), onError: handleError(_:))
             .disposed(by: disposeBag)

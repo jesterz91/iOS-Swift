@@ -22,7 +22,7 @@ final class MenuTableHeaderView: BaseView {
         addSubview(label)
     }
     
-    override func makeConstraints() {
+    override func makeConstraint() {
         NSLayoutConstraint.activate([
             label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
             label.centerYAnchor.constraint(equalTo: centerYAnchor)
