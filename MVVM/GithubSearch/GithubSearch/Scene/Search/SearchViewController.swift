@@ -17,8 +17,6 @@ final class SearchViewController: BaseViewController<SearchViewModel> {
         static let loadMoreDistance: Int = 4
     }
 
-    var isScrollingDown: Bool = false
-
     private let repoTableView: UITableView = {
         let view = UITableView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -50,44 +48,25 @@ final class SearchViewController: BaseViewController<SearchViewModel> {
     override func bind() {
 
         viewModel.repoDrivder
-            .drive(repoTableView.rx.items(cellIdentifier: String(describing: UITableViewCell.self), cellType: UITableViewCell.self)) { _, item, cell in
+            .drive(repoTableView.rx.items(cellIdentifier: String(describing: UITableViewCell.self))) { _, item, cell in
                 cell.textLabel?.numberOfLines = .zero
                 cell.textLabel?.lineBreakMode = .byWordWrapping
                 cell.textLabel?.text = item.name + "\n" + item.itemDescription
             }
             .disposed(by: disposeBag)
 
-        // 이전 좌표와 새 좌표를 비교하여 스크롤 여부 판단
-        repoTableView.rx.contentOffset
-            .scan((CGPoint.zero, CGPoint.zero)) { (tuple, newPoint) -> (CGPoint, CGPoint) in
-                let prevPoint = tuple.0
-                return (prevPoint, newPoint)
-            }
-            .map { (old: CGPoint, new: CGPoint) in
-                return old.y < new.y
-            }
-            .distinctUntilChanged()
-            .bind(to: self.rx.isScrollingDown)
-            .disposed(by: self.disposeBag)
+        // Pagination
+        repoTableView.rx.prefetchRows
+            .asDriver(onErrorJustReturn: [])
+            .drive(onNext: { [weak self] indexPaths in
+                guard let self = self else { return }
 
-        // loadMore 이벤트 처리
-        repoTableView.rx.willDisplayCell
-            .filter { [weak self] (cell, indexPath) -> Bool in
-                guard let self = self, self.isScrollingDown else { return false }
-                return indexPath.row == self.repoTableView.numberOfRows(inSection: 0) - Search.loadMoreDistance
-            }
-            .subscribe(onNext: { [weak self] _ in
-                self?.viewModel.fetchRepositories(query: Search.query)
+                let itemCount = self.repoTableView.numberOfRows(inSection: 0)
+
+                indexPaths
+                    .first { $0.row == itemCount - Search.loadMoreDistance }
+                    .map { _ in self.viewModel.fetchRepositories(query: Search.query) }
             })
             .disposed(by: disposeBag)
-    }
-}
-
-extension Reactive where Base: SearchViewController {
-
-    var isScrollingDown: Binder<Bool> {
-        return Binder(self.base) { vc, result in
-            vc.isScrollingDown = result
-        }
     }
 }
