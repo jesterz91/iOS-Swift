@@ -7,6 +7,8 @@
 
 import UIKit
 
+import RxDataSources
+
 final class RestaurantsViewController: BaseViewController<RestaurantsViewModel> {
 
     private let restaurantsTableView: UITableView = {
@@ -44,10 +46,24 @@ final class RestaurantsViewController: BaseViewController<RestaurantsViewModel> 
             .drive(navigationItem.rx.title)
             .disposed(by: disposeBag)
 
-        viewModel.restaurantsDriver
-            .drive(restaurantsTableView.rx.items(cellIdentifier: String(describing: UITableViewCell.self), cellType: UITableViewCell.self)) { _, item, cell in
-                cell.textLabel?.text = item.displayText
+        let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<Cuisine, Restaurant>>(
+            configureCell: { dataSource, tableView, indexPath, element in
+                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: UITableViewCell.self), for: indexPath)
+                cell.textLabel?.text = element.name
+                return cell
+            },
+            titleForHeaderInSection: { datasource, index in
+                return datasource.sectionModels[index].model.rawValue.capitalized
             }
+        )
+
+        viewModel.restaurantsDriver
+            .map { Dictionary(grouping: $0) { $0.cuisine } } // [Restaurant] -> [Cuisine: Restaurant]
+            .map { grouped in
+                // [Cuisine: Restaurant] -> [SectionModel<Cuisine, Restaurant>]
+                grouped.map { (key, value) in SectionModel<Cuisine, Restaurant>(model: key, items: value) }
+            }
+            .drive(restaurantsTableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
     }
 }

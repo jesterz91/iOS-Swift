@@ -8,4 +8,5 @@ target 'Restaurants' do
   # Pods for Restaurants
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxDataSources'
 end
