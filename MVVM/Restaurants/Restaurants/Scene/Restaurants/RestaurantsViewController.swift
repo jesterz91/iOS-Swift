@@ -58,9 +58,9 @@ final class RestaurantsViewController: BaseViewController<RestaurantsViewModel> 
         )
 
         viewModel.restaurantsDriver
-            .map { Dictionary(grouping: $0) { $0.cuisine } } // [Restaurant] -> [Cuisine: Restaurant]
+            .map { Dictionary(grouping: $0) { $0.cuisine } } // [Restaurant] -> [Cuisine: [Restaurant]]
             .map { grouped in
-                // [Cuisine: Restaurant] -> [SectionModel<Cuisine, Restaurant>]
+                // [Cuisine: [Restaurant]] -> [SectionModel<Cuisine, Restaurant>]
                 grouped.map { (key, value) in SectionModel<Cuisine, Restaurant>(model: key, items: value) }
             }
             .drive(restaurantsTableView.rx.items(dataSource: dataSource))
