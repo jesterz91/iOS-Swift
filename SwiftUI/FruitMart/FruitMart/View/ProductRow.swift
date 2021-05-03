@@ -85,6 +85,14 @@ struct ProductRow_Previews: PreviewProvider {
             isFavorite: false
         )
 
-        ProductRow(product: product)
+        Group {
+            ForEach(Store.products) {
+                ProductRow(product: $0)
+            }
+            ProductRow(product: product)
+                .preferredColorScheme(.dark)
+        }
+        .padding()
+        .previewLayout(.sizeThatFits)
     }
 }

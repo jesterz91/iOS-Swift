@@ -107,6 +107,9 @@ private extension ProductDetailView {
 
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductDetailView(product: Store.products[2])
+        Group {
+            Preview(source: ProductDetailView(product: Store.products[0]))
+            Preview(source: ProductDetailView(product: Store.products[1]), devices: [.iPhone11Pro], displayDarkMode: false)
+        }
     }
 }

@@ -18,6 +18,7 @@
 		9BB84021263F073B0014D99D /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB84020263F073B0014D99D /* ProductRow.swift */; };
 		9BB84027263F0A4C0014D99D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB84026263F0A4C0014D99D /* Color+Extension.swift */; };
 		9BB8403426403A570014D99D /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8403326403A570014D99D /* ProductDetailView.swift */; };
+		9BB84037264059320014D99D /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB84036264059320014D99D /* Preview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9BB84020263F073B0014D99D /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		9BB84026263F0A4C0014D99D /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		9BB8403326403A570014D99D /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		9BB84036264059320014D99D /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		9BB84022263F07750014D99D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9BB84035264059210014D99D /* Preview */,
 				9BB8400C263EF4830014D99D /* HomeView.swift */,
 				9BB8403326403A570014D99D /* ProductDetailView.swift */,
 				9BB84020263F073B0014D99D /* ProductRow.swift */,
@@ -120,6 +123,14 @@
 				9BB84026263F0A4C0014D99D /* Color+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		9BB84035264059210014D99D /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				9BB84036264059320014D99D /* Preview.swift */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 				9BB84021263F073B0014D99D /* ProductRow.swift in Sources */,
 				9BB8401D263EFBF60014D99D /* Product.swift in Sources */,
 				9BB8400B263EF4830014D99D /* SceneDelegate.swift in Sources */,
+				9BB84037264059320014D99D /* Preview.swift in Sources */,
 				9BB8400D263EF4830014D99D /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
