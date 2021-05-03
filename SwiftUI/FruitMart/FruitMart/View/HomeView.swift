@@ -12,13 +12,13 @@ struct HomeView: View {
     private let products: [Product] = Store.products
 
     var body: some View {
-
-        VStack {
-            ProductRow(product: products[0])
-            ProductRow(product: products[1])
-            ProductRow(product: products[2])
+        NavigationView {
+            List(products) { product in
+                NavigationLink(destination: ProductDetailView(product: product)) {
+                    ProductRow(product: product)
+                }
+            }.navigationBarTitle("과일마트")
         }
-        .padding(.horizontal, 10)
     }
 }
 

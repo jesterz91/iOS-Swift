@@ -14,3 +14,10 @@ struct Product: Decodable {
     let description: String
     let isFavorite: Bool
 }
+
+extension Product: Identifiable {
+
+    var id: UUID {
+        return UUID()
+    }
+}

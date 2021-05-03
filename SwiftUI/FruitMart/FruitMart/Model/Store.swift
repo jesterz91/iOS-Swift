@@ -11,12 +11,7 @@ final class Store {
 
     static var products: [Product] {
         guard let productsDataAsset = NSDataAsset(name: "products") else { return [] }
-
-        do {
-            let items = try JSONDecoder().decode([Product].self, from: productsDataAsset.data)
-            return items
-        } catch {
-            return []
-        }
+        
+        return (try? JSONDecoder().decode([Product].self, from: productsDataAsset.data)) ?? []
     }
 }
