@@ -57,10 +57,7 @@ private extension ProductDetailView {
 
                 Spacer()
 
-                Image(systemName: "heart")
-                    .imageScale(.large)
-                    .foregroundColor(.peach)
-                    .frame(width: 32, height: 32)
+                FavoriteButton(product: product)
             }
 
             Text(splitText(product.description))
@@ -112,8 +109,8 @@ private extension ProductDetailView {
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            Preview(source: ProductDetailView(product: Store.products[0]))
-            Preview(source: ProductDetailView(product: Store.products[1]), devices: [.iPhone11Pro], displayDarkMode: false)
+            Preview(source: ProductDetailView(product: Store().products[0]))
+            Preview(source: ProductDetailView(product: Store().products[1]), devices: [.iPhone11Pro], displayDarkMode: false)
         }
     }
 }

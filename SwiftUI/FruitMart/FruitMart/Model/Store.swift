@@ -7,11 +7,24 @@
 
 import UIKit
 
-final class Store {
+final class Store: ObservableObject {
 
-    static var products: [Product] {
-        guard let productsDataAsset = NSDataAsset(name: "products") else { return [] }
+    @Published var products: [Product]
+    
+    init() {
+        if let productsDataAsset = NSDataAsset(name: "products") {
+            self.products = (try? JSONDecoder().decode([Product].self, from: productsDataAsset.data)) ?? []
+        } else {
+            self.products = []
+        }
+    }
+}
+
+extension Store {
+    
+    func toggleFavorite(of product: Product) {
+        guard let index = products.firstIndex(of: product) else { return }
         
-        return (try? JSONDecoder().decode([Product].self, from: productsDataAsset.data)) ?? []
+        products[index].isFavorite.toggle()
     }
 }

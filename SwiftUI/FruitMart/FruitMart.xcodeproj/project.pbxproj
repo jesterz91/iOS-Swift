@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9BA0763226418FF900CFA137 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA0763126418FF900CFA137 /* QuantitySelector.swift */; };
+		9BA076362641A3FA00CFA137 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA076352641A3FA00CFA137 /* FavoriteButton.swift */; };
 		9BB84009263EF4830014D99D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB84008263EF4830014D99D /* AppDelegate.swift */; };
 		9BB8400B263EF4830014D99D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8400A263EF4830014D99D /* SceneDelegate.swift */; };
 		9BB8400D263EF4830014D99D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8400C263EF4830014D99D /* HomeView.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		9BA0763126418FF900CFA137 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
+		9BA076352641A3FA00CFA137 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		9BB84005263EF4830014D99D /* FruitMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB84008263EF4830014D99D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB8400A263EF4830014D99D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				9BB84035264059210014D99D /* Preview */,
+				9BA076352641A3FA00CFA137 /* FavoriteButton.swift */,
 				9BB8400C263EF4830014D99D /* HomeView.swift */,
 				9BB8403326403A570014D99D /* ProductDetailView.swift */,
 				9BB84020263F073B0014D99D /* ProductRow.swift */,
@@ -215,6 +218,7 @@
 				9BB8400B263EF4830014D99D /* SceneDelegate.swift in Sources */,
 				9BA0763226418FF900CFA137 /* QuantitySelector.swift in Sources */,
 				9BB84037264059320014D99D /* Preview.swift in Sources */,
+				9BA076362641A3FA00CFA137 /* FavoriteButton.swift in Sources */,
 				9BB8400D263EF4830014D99D /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

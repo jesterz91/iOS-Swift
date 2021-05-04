@@ -9,11 +9,11 @@ import SwiftUI
 
 struct HomeView: View {
 
-    private let products: [Product] = Store.products
+    @EnvironmentObject private var store: Store
 
     var body: some View {
         NavigationView {
-            List(products) { product in
+            List(store.products) { product in
                 NavigationLink(destination: ProductDetailView(product: product)) {
                     ProductRow(product: product)
                 }

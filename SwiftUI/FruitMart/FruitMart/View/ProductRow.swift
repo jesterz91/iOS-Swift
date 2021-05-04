@@ -61,10 +61,7 @@ private extension ProductRow {
 
             Spacer()
 
-            Image(systemName: "heart")
-                .imageScale(.large)
-                .foregroundColor(.peach)
-                .frame(width: 32, height: 32)
+            FavoriteButton(product: product)
 
             Image(systemName: "cart")
                 .foregroundColor(.peach)
@@ -86,7 +83,7 @@ struct ProductRow_Previews: PreviewProvider {
         )
 
         Group {
-            ForEach(Store.products) {
+            ForEach(Store().products) {
                 ProductRow(product: $0)
             }
             ProductRow(product: product)
