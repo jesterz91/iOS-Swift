@@ -13,12 +13,29 @@ struct ProductDetailView: View {
 
     @State private var quantity: Int = 1
 
+    @State private var showingAlert: Bool = false
+
+    @EnvironmentObject private var store: Store
+
     var body: some View {
         VStack(spacing: 0) {
             productImage
             orderView
         }
         .edgesIgnoringSafeArea(.top)
+        .alert(isPresented: $showingAlert) { confirmAlert }
+    }
+
+    var confirmAlert: Alert {
+        Alert(
+            title: Text("주문 확인"),
+            message: Text("\(product.name)을(를) \(quantity)개 구매하시겠습니까?"),
+            primaryButton: .default(Text("확인"), action: {
+                store.placeOrder(product: product, quantity: quantity)
+                dump(store.orders)
+            }),
+            secondaryButton: .cancel(Text("취소"))
+        )
     }
 }
 
@@ -78,7 +95,7 @@ private extension ProductDetailView {
 
     var placeOrderButton: some View {
         Button(action: {
-            print("order")
+            self.showingAlert = true
         }) {
             Capsule()
                 .fill(Color.peach)

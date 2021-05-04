@@ -11,12 +11,20 @@ final class Store: ObservableObject {
 
     @Published var products: [Product]
     
+    @Published var orders: [Order] = []
+
     init() {
         if let productsDataAsset = NSDataAsset(name: "products") {
             self.products = (try? JSONDecoder().decode([Product].self, from: productsDataAsset.data)) ?? []
         } else {
             self.products = []
         }
+    }
+
+    func placeOrder(product: Product, quantity: Int) {
+        let orderID = Order.orderSequence.next()!
+        let order = Order(id: orderID, product: product, quantity: quantity)
+        orders.append(order)
     }
 }
 
