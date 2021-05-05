@@ -101,7 +101,7 @@ private extension ProductDetailView {
                 .overlay(Text("주문하기")
                             .font(.system(size: 20)).fontWeight(.medium)
                             .foregroundColor(Color.white))
-        }
+        }.buttonStyle(ShirinkButtonStyle())
     }
 
     func splitText(_ text: String) -> String {
