@@ -18,9 +18,7 @@ struct FavoriteButton: View {
     }
 
     var body: some View {
-        Image(systemName: imageName)
-            .imageScale(.large)
-            .foregroundColor(.peach)
+        Symbol(imageName, imageScale: .large, color: .peach)
             .frame(width: 32, height: 32)
             .onTapGesture { self.store.toggleFavorite(of: self.product) }
     }
@@ -29,5 +27,6 @@ struct FavoriteButton: View {
 struct FavoriteButton_Previews: PreviewProvider {
     static var previews: some View {
         FavoriteButton(product: Store().products[0])
+            .previewLayout(.sizeThatFits)
     }
 }
