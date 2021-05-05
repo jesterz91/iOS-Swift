@@ -13,6 +13,7 @@
 		9BA0763B2642DC0000CFA137 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA0763A2642DC0000CFA137 /* Symbol.swift */; };
 		9BA0763D2642DD8B00CFA137 /* ResizedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA0763C2642DD8B00CFA137 /* ResizedImage.swift */; };
 		9BA076402642E26F00CFA137 /* ShirinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA0763F2642E26F00CFA137 /* ShirinkButtonStyle.swift */; };
+		9BA076452642ED0C00CFA137 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA076442642ED0C00CFA137 /* UIColor+Extension.swift */; };
 		9BB84009263EF4830014D99D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB84008263EF4830014D99D /* AppDelegate.swift */; };
 		9BB8400B263EF4830014D99D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8400A263EF4830014D99D /* SceneDelegate.swift */; };
 		9BB8400D263EF4830014D99D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8400C263EF4830014D99D /* HomeView.swift */; };
@@ -34,6 +35,7 @@
 		9BA0763A2642DC0000CFA137 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		9BA0763C2642DD8B00CFA137 /* ResizedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizedImage.swift; sourceTree = "<group>"; };
 		9BA0763F2642E26F00CFA137 /* ShirinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShirinkButtonStyle.swift; sourceTree = "<group>"; };
+		9BA076442642ED0C00CFA137 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		9BB84005263EF4830014D99D /* FruitMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB84008263EF4830014D99D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB8400A263EF4830014D99D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				9BB84026263F0A4C0014D99D /* Color+Extension.swift */,
+				9BA076442642ED0C00CFA137 /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				9BA076402642E26F00CFA137 /* ShirinkButtonStyle.swift in Sources */,
 				9BB84021263F073B0014D99D /* ProductRow.swift in Sources */,
 				9BA0763B2642DC0000CFA137 /* Symbol.swift in Sources */,
+				9BA076452642ED0C00CFA137 /* UIColor+Extension.swift in Sources */,
 				9BB8401D263EFBF60014D99D /* Product.swift in Sources */,
 				9BA076382641AA0E00CFA137 /* Order.swift in Sources */,
 				9BA0763D2642DD8B00CFA137 /* ResizedImage.swift in Sources */,

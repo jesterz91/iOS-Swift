@@ -16,10 +16,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Use a UIHostingController as window root view controller.
         guard let windowScene = scene as? UIWindowScene else { return }
-        
+
+        configureAppearance()
+
+        let rootView = HomeView().environmentObject(Store()).accentColor(.primary)
+
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = UIHostingController(rootView: HomeView().environmentObject(Store()))
+        window?.rootViewController = UIHostingController(rootView: rootView)
         window?.makeKeyAndVisible()
+    }
+
+    private func configureAppearance() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            .foregroundColor: UIColor.peach
+        ]
+        UINavigationBar.appearance().titleTextAttributes = [
+            .foregroundColor: UIColor.peach
+        ]
     }
 }
 
