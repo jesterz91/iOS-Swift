@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B9F6B91264800A300155573 /* FavoriteProductScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F6B90264800A300155573 /* FavoriteProductScrollView.swift */; };
+		9B9F6B932648082E00155573 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F6B922648082E00155573 /* MainTabView.swift */; };
 		9BA0763226418FF900CFA137 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA0763126418FF900CFA137 /* QuantitySelector.swift */; };
 		9BA076362641A3FA00CFA137 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA076352641A3FA00CFA137 /* FavoriteButton.swift */; };
 		9BA076382641AA0E00CFA137 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA076372641AA0E00CFA137 /* Order.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		9B9F6B90264800A300155573 /* FavoriteProductScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductScrollView.swift; sourceTree = "<group>"; };
+		9B9F6B922648082E00155573 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		9BA0763126418FF900CFA137 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
 		9BA076352641A3FA00CFA137 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		9BA076372641AA0E00CFA137 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				9BA076352641A3FA00CFA137 /* FavoriteButton.swift */,
 				9B9F6B90264800A300155573 /* FavoriteProductScrollView.swift */,
 				9BB8400C263EF4830014D99D /* HomeView.swift */,
+				9B9F6B922648082E00155573 /* MainTabView.swift */,
 				9BB8403326403A570014D99D /* ProductDetailView.swift */,
 				9BB84020263F073B0014D99D /* ProductRow.swift */,
 				9BA0763126418FF900CFA137 /* QuantitySelector.swift */,
@@ -254,6 +257,7 @@
 				9BA076452642ED0C00CFA137 /* UIColor+Extension.swift in Sources */,
 				9BB8401D263EFBF60014D99D /* Product.swift in Sources */,
 				9BA076382641AA0E00CFA137 /* Order.swift in Sources */,
+				9B9F6B932648082E00155573 /* MainTabView.swift in Sources */,
 				9BA0763D2642DD8B00CFA137 /* ResizedImage.swift in Sources */,
 				9BB8400B263EF4830014D99D /* SceneDelegate.swift in Sources */,
 				9BA0763226418FF900CFA137 /* QuantitySelector.swift in Sources */,

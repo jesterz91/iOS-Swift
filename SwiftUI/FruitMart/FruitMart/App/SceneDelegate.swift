@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         configureAppearance()
 
-        let rootView = HomeView().environmentObject(Store()).accentColor(.primary)
+        let rootView = MainTabView().environmentObject(Store()) //.accentColor(.primary)
 
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = UIHostingController(rootView: rootView)
