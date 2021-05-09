@@ -11,14 +11,41 @@ struct HomeView: View {
 
     @EnvironmentObject private var store: Store
 
+    @State private var showingFavoriteImage: Bool = true
+
     var body: some View {
         NavigationView {
-            List(store.products) { product in
-                NavigationLink(destination: ProductDetailView(product: product)) {
-                    ProductRow(product: product)
+            VStack {
+                if showFavorite {
+                    favoriteProducts
                 }
-            }.navigationBarTitle("과일마트")
+                darkerDivider
+                productList
+            }
         }
+    }
+
+    private var favoriteProducts: some View {
+        FavoriteProductScrollView(showingImage: $showingFavoriteImage)
+            .padding(.vertical, 8)
+    }
+
+    private var darkerDivider: some View {
+        Color.primary
+            .opacity(0.3)
+            .frame(maxWidth: .infinity, maxHeight: 1)
+    }
+
+    private var productList: some View {
+        List(store.products) { product in
+            NavigationLink(destination: ProductDetailView(product: product)) {
+                ProductRow(product: product)
+            }
+        }.navigationBarTitle("과일마트")
+    }
+
+    private var showFavorite: Bool {
+        !store.products.filter({ $0.isFavorite }).isEmpty
     }
 }
 
