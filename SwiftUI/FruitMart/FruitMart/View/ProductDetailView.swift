@@ -17,13 +17,18 @@ struct ProductDetailView: View {
 
     @EnvironmentObject private var store: Store
 
+    @State private var willAppear: Bool = false
+
     var body: some View {
         VStack(spacing: 0) {
-            productImage
+            if willAppear {
+                productImage
+            }
             orderView
         }
         .edgesIgnoringSafeArea(.top)
         .alert(isPresented: $showingAlert) { confirmAlert }
+        .onAppear { self.willAppear = true }
     }
 
     var confirmAlert: Alert {
@@ -42,9 +47,12 @@ struct ProductDetailView: View {
 private extension ProductDetailView {
 
     var productImage: some View {
-        GeometryReader { _ in
+        let effect = AnyTransition.scale.combined(with: .opacity)
+            .animation(.easeInOut(duration: 0.4).delay(0.05))
+        return GeometryReader { _ in
             ResizedImage(product.imageName)
         }
+        .transition(effect)
     }
 
     var orderView: some View {

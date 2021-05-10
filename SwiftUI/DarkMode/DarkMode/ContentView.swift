@@ -41,7 +41,7 @@ struct ContentView: View {
                     )
                 })
 
-                Spacer().frame(height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                Spacer().frame(height: 100)
             }
         }
         .ignoresSafeArea()

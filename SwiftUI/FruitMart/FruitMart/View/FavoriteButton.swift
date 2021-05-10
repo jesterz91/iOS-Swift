@@ -20,7 +20,9 @@ struct FavoriteButton: View {
     var body: some View {
         Symbol(imageName, imageScale: .large, color: .peach)
             .frame(width: 32, height: 32)
-            .onTapGesture { self.store.toggleFavorite(of: self.product) }
+            .onTapGesture {
+                withAnimation { self.store.toggleFavorite(of: self.product) }
+            }
     }
 }
 
