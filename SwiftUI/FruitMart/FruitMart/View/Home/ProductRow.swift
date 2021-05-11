@@ -26,6 +26,9 @@ struct ProductRow: View {
         .opacity(willAppear ? 1 : 0)
         .animation(.easeInOut(duration: 0.4))
         .onAppear { self.willAppear = true }
+        .contextMenu(menuItems: {
+            contextMenu
+        })
     }
 }
 
@@ -71,6 +74,24 @@ private extension ProductRow {
             Image(systemName: "cart")
                 .foregroundColor(.peach)
                 .frame(width: 32, height: 32)
+        }
+    }
+
+    var contextMenu: some View {
+        VStack {
+            Button(action: {
+                print("Favorite")
+            }, label: {
+                Text("좋아요")
+                Symbol(self.product.isFavorite ? "heart.fill" : "heart")
+            })
+
+            Button(action: {
+                print("order")
+            }, label: {
+                Text("구매하기")
+                Symbol("cart")
+            })
         }
     }
 }
