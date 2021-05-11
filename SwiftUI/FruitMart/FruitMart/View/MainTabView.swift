@@ -41,7 +41,7 @@ struct MainTabView: View {
     }
 
     var gallery: some View {
-        Text("갤러리")
+        ImageGallery()
             .tag(Tabs.recipe)
             .tabItem(image: "photo.on.rectangle", text: "갤러리")
     }

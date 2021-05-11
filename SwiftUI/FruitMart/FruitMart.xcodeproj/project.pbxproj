@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B7C74D1264ADC720094E552 /* FruitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C74D0264ADC720094E552 /* FruitCard.swift */; };
+		9B7C74D3264ADD770094E552 /* ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C74D2264ADD770094E552 /* ImageGallery.swift */; };
 		9B9F6B91264800A300155573 /* FavoriteProductScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F6B90264800A300155573 /* FavoriteProductScrollView.swift */; };
 		9B9F6B932648082E00155573 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F6B922648082E00155573 /* MainTabView.swift */; };
 		9BA0763226418FF900CFA137 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA0763126418FF900CFA137 /* QuantitySelector.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B7C74D0264ADC720094E552 /* FruitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCard.swift; sourceTree = "<group>"; };
+		9B7C74D2264ADD770094E552 /* ImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGallery.swift; sourceTree = "<group>"; };
 		9B9F6B90264800A300155573 /* FavoriteProductScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductScrollView.swift; sourceTree = "<group>"; };
 		9B9F6B922648082E00155573 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		9BA0763126418FF900CFA137 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
@@ -71,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B7C74CF264ADC500094E552 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				9B7C74D0264ADC720094E552 /* FruitCard.swift */,
+				9B7C74D2264ADD770094E552 /* ImageGallery.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
 		9BA076392642DBE000CFA137 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				9BA076392642DBE000CFA137 /* Custom */,
+				9B7C74CF264ADC500094E552 /* Gallery */,
 				9BCAB60E264991FC00F66512 /* Home */,
 				9BB84035264059210014D99D /* Preview */,
 				9BCAB60F2649920200F66512 /* Recipe */,
@@ -275,8 +289,10 @@
 				9BB84009263EF4830014D99D /* AppDelegate.swift in Sources */,
 				9BA076402642E26F00CFA137 /* ShirinkButtonStyle.swift in Sources */,
 				9BB84021263F073B0014D99D /* ProductRow.swift in Sources */,
+				9B7C74D1264ADC720094E552 /* FruitCard.swift in Sources */,
 				9BA0763B2642DC0000CFA137 /* Symbol.swift in Sources */,
 				9BA076452642ED0C00CFA137 /* UIColor+Extension.swift in Sources */,
+				9B7C74D3264ADD770094E552 /* ImageGallery.swift in Sources */,
 				9BB8401D263EFBF60014D99D /* Product.swift in Sources */,
 				9BA076382641AA0E00CFA137 /* Order.swift in Sources */,
 				9B9F6B932648082E00155573 /* MainTabView.swift in Sources */,
