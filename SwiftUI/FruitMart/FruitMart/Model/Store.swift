@@ -38,6 +38,15 @@ final class Store: ObservableObject {
         
         products[index].isFavorite.toggle()
     }
+
+    func deleteOrder(at indexs: IndexSet) {
+        guard let index = indexs.first else { return }
+        orders.remove(at: index)
+    }
+
+    func moveOrder(from indexs: IndexSet, to destination: Int) {
+        orders.move(fromOffsets: indexs, toOffset: destination)
+    }
 }
 
 // MARK: - File Handler
