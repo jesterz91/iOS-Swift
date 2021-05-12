@@ -139,12 +139,10 @@
 		9BB84007263EF4830014D99D /* FruitMart */ = {
 			isa = PBXGroup;
 			children = (
-				9BB84016263EF4870014D99D /* Info.plist */,
-				9BB8400E263EF4870014D99D /* Assets.xcassets */,
 				9BB84024263F07A40014D99D /* App */,
 				9BB84025263F0A360014D99D /* Extension */,
 				9BB84023263F078A0014D99D /* Model */,
-				9BB84010263EF4870014D99D /* Preview Content */,
+				9BB84035264059210014D99D /* Preview */,
 				9BB84022263F07750014D99D /* View */,
 			);
 			path = FruitMart;
@@ -165,7 +163,6 @@
 				9B7C74CF264ADC500094E552 /* Gallery */,
 				9BCAB60E264991FC00F66512 /* Home */,
 				9BA9CEB2264C14CB00663B7F /* MyPage */,
-				9BB84035264059210014D99D /* Preview */,
 				9BCAB60F2649920200F66512 /* Recipe */,
 				9B9F6B922648082E00155573 /* MainTabView.swift */,
 			);
@@ -187,8 +184,11 @@
 		9BB84024263F07A40014D99D /* App */ = {
 			isa = PBXGroup;
 			children = (
+				9BB84010263EF4870014D99D /* Preview Content */,
 				9BB84008263EF4830014D99D /* AppDelegate.swift */,
 				9BB8400A263EF4830014D99D /* SceneDelegate.swift */,
+				9BB8400E263EF4870014D99D /* Assets.xcassets */,
+				9BB84016263EF4870014D99D /* Info.plist */,
 				9BB84013263EF4870014D99D /* LaunchScreen.storyboard */,
 			);
 			path = App;
@@ -467,9 +467,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"FruitMart/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FruitMart/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = FruitMart/Info.plist;
+				INFOPLIST_FILE = FruitMart/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,9 +488,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"FruitMart/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FruitMart/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = FruitMart/Info.plist;
+				INFOPLIST_FILE = FruitMart/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
