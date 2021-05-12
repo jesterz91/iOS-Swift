@@ -47,7 +47,7 @@ struct MainTabView: View {
     }
 
     var myPage: some View {
-        Text("마이페이지")
+        MyPage()
             .tag(Tabs.recipe)
             .tabItem(image: "person", text: "마이페이지")
     }
