@@ -13,12 +13,14 @@ struct ProductRow: View {
 
     @State private var willAppear: Bool = false
 
+    @EnvironmentObject private var store: Store
+
     var body: some View {
         HStack {
             productImage
             productDescription
         }
-        .frame(height: 150)
+        .frame(height: store.appSetting.productRowHeight)
         .background(Color.primary.colorInvert())
         .cornerRadius(6)
         .shadow(color: .primaryShadow, radius: 1, x: 2, y: 2)

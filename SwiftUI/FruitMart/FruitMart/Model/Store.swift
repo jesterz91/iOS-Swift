@@ -17,12 +17,17 @@ final class Store: ObservableObject {
         }
     }
 
-    init() {
+    @Published var appSetting: AppSetting
+
+    init(appSetting: AppSetting = AppSetting()) {
+        self.appSetting = appSetting
+
         if let productsDataAsset = NSDataAsset(name: "products") {
             self.products = (try? JSONDecoder().decode([Product].self, from: productsDataAsset.data)) ?? []
         } else {
             self.products = []
         }
+
         self.orders = loadData(at: ordersFilePath)
     }
 
