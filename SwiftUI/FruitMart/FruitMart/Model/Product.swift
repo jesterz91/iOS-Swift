@@ -16,7 +16,7 @@ struct Product: Identifiable {
     var isFavorite: Bool
 }
 
-extension Product: Decodable {
+extension Product: Codable {
 
     enum CodingKeys: String, CodingKey {
         case name
