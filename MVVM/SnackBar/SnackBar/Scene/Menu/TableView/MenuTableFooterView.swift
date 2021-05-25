@@ -33,3 +33,15 @@ final class MenuTableFooterView: BaseView {
         priceLabel.text = "\(price) 원"
     }
 }
+
+#if DEBUG
+import SwiftUI
+
+struct MenuTableFooterView_Previews: PreviewProvider {
+
+    static var previews: some View {
+        return ViewRepresentable(target: MenuTableFooterView())
+            .previewLayout(.fixed(width: 375, height: 50))
+    }
+}
+#endif

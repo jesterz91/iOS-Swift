@@ -86,3 +86,22 @@ final class MenuViewController: BaseViewController<MenuViewModel> {
             .disposed(by: disposeBag)
     }
 }
+
+#if DEBUG
+import SwiftUI
+
+struct MenuViewController_Previews: PreviewProvider {
+    static var previews: some View {
+        let menuService = MenuService()
+        let menuViewModel = MenuViewModel(service: menuService)
+        Group {
+            ViewControllerRepresentable(target: UINavigationController(rootViewController: MenuViewController(viewModel: menuViewModel)))
+                .previewDevice(.iPhone12mini)
+
+            ViewControllerRepresentable(target: UINavigationController(rootViewController: MenuViewController(viewModel: menuViewModel)))
+                .previewDevice(.iPhone8)
+                .previewDisplayName("아이폰8")
+        }
+    }
+}
+#endif

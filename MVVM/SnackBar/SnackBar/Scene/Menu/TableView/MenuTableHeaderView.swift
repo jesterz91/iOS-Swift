@@ -29,3 +29,15 @@ final class MenuTableHeaderView: BaseView {
         ])
     }
 }
+
+#if DEBUG
+import SwiftUI
+
+struct MenuTableHeaderView_Previews: PreviewProvider {
+
+    static var previews: some View {
+        return ViewRepresentable(target: MenuTableHeaderView())
+            .previewLayout(.fixed(width: 375, height: 50))
+    }
+}
+#endif

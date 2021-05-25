@@ -106,3 +106,23 @@ final class MenuTableViewCell: BaseTableViewCell<Menu> {
 
 //    override func setSelected(_ selected: Bool, animated: Bool) { /* no-op */ }
 }
+
+#if DEBUG
+import SwiftUI
+
+struct MenuTableViewCell_Previews: PreviewProvider {
+
+    static var previews: some View {
+        let menuService = MenuService()
+        let menuViewModel = MenuViewModel(service: menuService)
+        let menu = Menu(name: "프리뷰 튀김", price: 3000, count: 1)
+
+        let cell = MenuTableViewCell(frame: .zero)
+        cell.bind(item: menu, viewModel: menuViewModel)
+        cell.isSelected = true
+
+        return ViewRepresentable(target: cell)
+            .previewLayout(.fixed(width: 375, height: 50))
+    }
+}
+#endif

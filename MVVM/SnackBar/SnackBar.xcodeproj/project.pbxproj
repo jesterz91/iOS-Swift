@@ -29,6 +29,9 @@
 		9B693FCE2631D55A000C9059 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B693FCD2631D55A000C9059 /* OrderViewController.swift */; };
 		9B693FD42631E61A000C9059 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B693FD32631E61A000C9059 /* BaseView.swift */; };
 		9B693FDC26325220000C9059 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B693FDB26325220000C9059 /* Menu.swift */; };
+		9BC291CF265CA0D60094EA7C /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC291CE265CA0D60094EA7C /* ViewControllerRepresentable.swift */; };
+		9BC291D1265CA0F20094EA7C /* ViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC291D0265CA0F20094EA7C /* ViewRepresentable.swift */; };
+		9BC291D3265CA10D0094EA7C /* PreviewDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC291D2265CA10D0094EA7C /* PreviewDevice.swift */; };
 		A6988AEE43AF6D3224195996 /* Pods_SnackBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF45951D2C1118EC39736319 /* Pods_SnackBar.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,9 @@
 		9B693FCD2631D55A000C9059 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		9B693FD32631E61A000C9059 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		9B693FDB26325220000C9059 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		9BC291CE265CA0D60094EA7C /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		9BC291D0265CA0F20094EA7C /* ViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRepresentable.swift; sourceTree = "<group>"; };
+		9BC291D2265CA10D0094EA7C /* PreviewDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewDevice.swift; sourceTree = "<group>"; };
 		E192F419E3BD9383FB62DAC2 /* Pods-SnackBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnackBar.release.xcconfig"; path = "Target Support Files/Pods-SnackBar/Pods-SnackBar.release.xcconfig"; sourceTree = "<group>"; };
 		EF45951D2C1118EC39736319 /* Pods_SnackBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnackBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,14 +110,11 @@
 		9B693F5F2631AEA1000C9059 /* SnackBar */ = {
 			isa = PBXGroup;
 			children = (
-				9B693F6E2631AEA2000C9059 /* Info.plist */,
-				9B693F602631AEA1000C9059 /* AppDelegate.swift */,
-				9B693F622631AEA1000C9059 /* SceneDelegate.swift */,
-				9B693F692631AEA2000C9059 /* Assets.xcassets */,
-				9B693F6B2631AEA2000C9059 /* LaunchScreen.storyboard */,
+				9BC291CC265CA06C0094EA7C /* App */,
 				9B693F802631B0DB000C9059 /* Network */,
-				9B693F8A2631B17A000C9059 /* Scene */,
 				9B693FA72631B7B7000C9059 /* Protocol */,
+				9B693F8A2631B17A000C9059 /* Scene */,
+				9BC291D4265CA3E70094EA7C /* Util */,
 			);
 			path = SnackBar;
 			sourceTree = "<group>";
@@ -201,6 +204,36 @@
 				9B693FDB26325220000C9059 /* Menu.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9BC291CC265CA06C0094EA7C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9B693F6E2631AEA2000C9059 /* Info.plist */,
+				9B693F602631AEA1000C9059 /* AppDelegate.swift */,
+				9B693F622631AEA1000C9059 /* SceneDelegate.swift */,
+				9B693F692631AEA2000C9059 /* Assets.xcassets */,
+				9B693F6B2631AEA2000C9059 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9BC291CD265CA0A60094EA7C /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				9BC291D2265CA10D0094EA7C /* PreviewDevice.swift */,
+				9BC291CE265CA0D60094EA7C /* ViewControllerRepresentable.swift */,
+				9BC291D0265CA0F20094EA7C /* ViewRepresentable.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		9BC291D4265CA3E70094EA7C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9BC291CD265CA0A60094EA7C /* Preview */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		BCC3332B4E581916E7635468 /* Frameworks */ = {
@@ -329,13 +362,16 @@
 				9B693F8C2631B1EB000C9059 /* MenuViewController.swift in Sources */,
 				9B693FCB2631D529000C9059 /* OrderViewModel.swift in Sources */,
 				9B693F9E2631B2B2000C9059 /* MenuViewModel.swift in Sources */,
+				9BC291D1265CA0F20094EA7C /* ViewRepresentable.swift in Sources */,
 				9B693FAD2631B891000C9059 /* MenuTableView.swift in Sources */,
 				9B693F612631AEA1000C9059 /* AppDelegate.swift in Sources */,
 				9B693FA52631B79A000C9059 /* MenuTableViewCell.swift in Sources */,
+				9BC291D3265CA10D0094EA7C /* PreviewDevice.swift in Sources */,
 				9B693FC12631CAA0000C9059 /* MenuTableHeaderView.swift in Sources */,
 				9B693FCE2631D55A000C9059 /* OrderViewController.swift in Sources */,
 				9B693FBA2631BF29000C9059 /* BaseTableView.swift in Sources */,
 				9B693F632631AEA1000C9059 /* SceneDelegate.swift in Sources */,
+				9BC291CF265CA0D60094EA7C /* ViewControllerRepresentable.swift in Sources */,
 				9B693F952631B211000C9059 /* BaseViewModel.swift in Sources */,
 				9B693F912631B201000C9059 /* BaseViewController.swift in Sources */,
 				9B693FDC26325220000C9059 /* Menu.swift in Sources */,
@@ -484,7 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SnackBar/Info.plist;
+				INFOPLIST_FILE = SnackBar/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,7 +540,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SnackBar/Info.plist;
+				INFOPLIST_FILE = SnackBar/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
