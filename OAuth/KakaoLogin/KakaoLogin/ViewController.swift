@@ -27,11 +27,11 @@ final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
         self.title = "카카오 로그인"
         self.view.backgroundColor = .white
         self.view.addSubview(loginButton)
-        
+
         NSLayoutConstraint.activate([
             loginButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             loginButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
@@ -111,19 +111,13 @@ final class ViewController: UIViewController {
 #if DEBUG
 import SwiftUI
 
-struct ViewControllerRepresentable: UIViewControllerRepresentable {
-    
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) { /* no-op */ }
-    
-    @available(iOS 13.0, *)
-    func makeUIViewController(context: Context) -> some UIViewController {
-        return ViewController()
-    }
-}
+struct ViewController_Previews: PreviewProvider {
 
-struct ViewControllerPreview: PreviewProvider {
     static var previews: some View {
-        ViewControllerRepresentable()
+        ViewControllerRepresentable(target: ViewController())
+        
+        ViewControllerRepresentable(target: ViewController())
+            .previewDevice(.iPhone8)
     }
 }
 #endif
