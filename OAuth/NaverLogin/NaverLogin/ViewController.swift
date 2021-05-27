@@ -17,7 +17,7 @@ final class ViewController: UIViewController {
         return instance
     }()
     
-    private lazy var loginButton: UIImageView = {
+    private let loginButton: UIImageView = {
         let view = UIImageView(image: .naver_login)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.isUserInteractionEnabled = true
@@ -121,19 +121,10 @@ extension ViewController: NaverThirdPartyLoginConnectionDelegate {
 #if DEBUG
 import SwiftUI
 
-struct ViewControllerRepresentable: UIViewControllerRepresentable {
-    
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) { /* no-op */ }
-    
-    @available(iOS 13.0, *)
-    func makeUIViewController(context: Context) -> some UIViewController {
-        return ViewController()
-    }
-}
+struct ViewController_Previews: PreviewProvider {
 
-struct ViewControllerPreview: PreviewProvider {
     static var previews: some View {
-        ViewControllerRepresentable()
+        ViewControllerRepresentable(target: ViewController())
     }
 }
 #endif

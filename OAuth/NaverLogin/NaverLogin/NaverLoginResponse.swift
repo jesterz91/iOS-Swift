@@ -8,14 +8,14 @@
 import Foundation
 
 // MARK: - NaverLoginResponse
-struct NaverLoginResponse: Codable {
+struct NaverLoginResponse: Decodable {
     let resultcode: String
     let message: String
     let response: User
 }
 
 // MARK: - User
-struct User: Codable {
+struct User: Decodable {
     let id: Int
     let name: String
     let nickname: String

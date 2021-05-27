@@ -13,8 +13,11 @@
 		9B27C85625E157F4005724F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B27C85525E157F4005724F2 /* ViewController.swift */; };
 		9B27C85B25E157F6005724F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B27C85A25E157F6005724F2 /* Assets.xcassets */; };
 		9B27C85E25E157F6005724F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B27C85C25E157F6005724F2 /* LaunchScreen.storyboard */; };
-		9B27C86C25E15EC7005724F2 /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B27C86B25E15EC7005724F2 /* Extension+UIImage.swift */; };
+		9B27C86C25E15EC7005724F2 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B27C86B25E15EC7005724F2 /* UIImage+Extension.swift */; };
 		9B27C87525E17CDB005724F2 /* NaverLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B27C87425E17CDB005724F2 /* NaverLoginResponse.swift */; };
+		9BAE909F265F8F190082E81B /* PreviewDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE909E265F8F190082E81B /* PreviewDevice.swift */; };
+		9BAE90A1265F8F300082E81B /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE90A0265F8F300082E81B /* ViewControllerRepresentable.swift */; };
+		9BAE90A3265F8F4C0082E81B /* ViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE90A2265F8F4C0082E81B /* ViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +30,11 @@
 		9B27C85A25E157F6005724F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B27C85D25E157F6005724F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B27C85F25E157F6005724F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B27C86B25E15EC7005724F2 /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
+		9B27C86B25E15EC7005724F2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		9B27C87425E17CDB005724F2 /* NaverLoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverLoginResponse.swift; sourceTree = "<group>"; };
+		9BAE909E265F8F190082E81B /* PreviewDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewDevice.swift; sourceTree = "<group>"; };
+		9BAE90A0265F8F300082E81B /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		9BAE90A2265F8F4C0082E81B /* ViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRepresentable.swift; sourceTree = "<group>"; };
 		D9AC9A8EB9FE9A7DCE94B530 /* Pods-NaverLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverLogin.debug.xcconfig"; path = "Target Support Files/Pods-NaverLogin/Pods-NaverLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,16 +88,35 @@
 		9B27C85025E157F4005724F2 /* NaverLogin */ = {
 			isa = PBXGroup;
 			children = (
-				9B27C85125E157F4005724F2 /* AppDelegate.swift */,
-				9B27C85325E157F4005724F2 /* SceneDelegate.swift */,
+				9BAE909D265F8EF30082E81B /* Preview */,
+				9BAE909C265F8EC60082E81B /* App */,
 				9B27C85525E157F4005724F2 /* ViewController.swift */,
-				9B27C85A25E157F6005724F2 /* Assets.xcassets */,
-				9B27C85C25E157F6005724F2 /* LaunchScreen.storyboard */,
-				9B27C85F25E157F6005724F2 /* Info.plist */,
-				9B27C86B25E15EC7005724F2 /* Extension+UIImage.swift */,
+				9B27C86B25E15EC7005724F2 /* UIImage+Extension.swift */,
 				9B27C87425E17CDB005724F2 /* NaverLoginResponse.swift */,
 			);
 			path = NaverLogin;
+			sourceTree = "<group>";
+		};
+		9BAE909C265F8EC60082E81B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9B27C85125E157F4005724F2 /* AppDelegate.swift */,
+				9B27C85325E157F4005724F2 /* SceneDelegate.swift */,
+				9B27C85A25E157F6005724F2 /* Assets.xcassets */,
+				9B27C85C25E157F6005724F2 /* LaunchScreen.storyboard */,
+				9B27C85F25E157F6005724F2 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9BAE909D265F8EF30082E81B /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				9BAE909E265F8F190082E81B /* PreviewDevice.swift */,
+				9BAE90A0265F8F300082E81B /* ViewControllerRepresentable.swift */,
+				9BAE90A2265F8F4C0082E81B /* ViewRepresentable.swift */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,11 +232,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BAE909F265F8F190082E81B /* PreviewDevice.swift in Sources */,
+				9BAE90A3265F8F4C0082E81B /* ViewRepresentable.swift in Sources */,
 				9B27C85625E157F4005724F2 /* ViewController.swift in Sources */,
 				9B27C85225E157F4005724F2 /* AppDelegate.swift in Sources */,
 				9B27C87525E17CDB005724F2 /* NaverLoginResponse.swift in Sources */,
 				9B27C85425E157F4005724F2 /* SceneDelegate.swift in Sources */,
-				9B27C86C25E15EC7005724F2 /* Extension+UIImage.swift in Sources */,
+				9BAE90A1265F8F300082E81B /* ViewControllerRepresentable.swift in Sources */,
+				9B27C86C25E15EC7005724F2 /* UIImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +382,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = NaverLogin/Info.plist;
+				INFOPLIST_FILE = NaverLogin/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -377,7 +405,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = NaverLogin/Info.plist;
+				INFOPLIST_FILE = NaverLogin/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
