@@ -97,3 +97,14 @@ extension ViewController: LoginButtonDelegate {
         print("DidLogOut")
     }
 }
+
+#if DEBUG
+import SwiftUI
+
+struct ViewController_Previews: PreviewProvider {
+
+    static var previews: some View {
+        ViewControllerRepresentable(target: ViewController())
+    }
+}
+#endif
