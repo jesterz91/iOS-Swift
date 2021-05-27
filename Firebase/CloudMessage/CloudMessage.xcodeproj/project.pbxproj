@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F68A1587E43C7DADC6E0FB9 /* Pods_CloudMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4F272AD3E527F991FCD5B0 /* Pods_CloudMessage.framework */; };
+		9BB884E9265EA899003DE5BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB884E8265EA899003DE5BF /* AppDelegate.swift */; };
+		9BB884EB265EA899003DE5BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB884EA265EA899003DE5BF /* SceneDelegate.swift */; };
+		9BB884EF265EA89C003DE5BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB884EE265EA89C003DE5BF /* Assets.xcassets */; };
+		9BB884F5265EA89C003DE5BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB884F3265EA89C003DE5BF /* LaunchScreen.storyboard */; };
+		9BB884FE265EAA99003DE5BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB884FD265EAA99003DE5BF /* ViewController.swift */; };
+		9BB88501265EAE41003DE5BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB88500265EAE41003DE5BF /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B4F272AD3E527F991FCD5B0 /* Pods_CloudMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9337E9E9196FB34DBE2A38E9 /* Pods-CloudMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudMessage.release.xcconfig"; path = "Target Support Files/Pods-CloudMessage/Pods-CloudMessage.release.xcconfig"; sourceTree = "<group>"; };
+		9BB884E5265EA899003DE5BF /* CloudMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB884E8265EA899003DE5BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BB884EA265EA899003DE5BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9BB884EE265EA89C003DE5BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BB884F4265EA89C003DE5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BB884F6265EA89C003DE5BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BB884FD265EAA99003DE5BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BB884FF265EAB9B003DE5BF /* CloudMessage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudMessage.entitlements; sourceTree = "<group>"; };
+		9BB88500265EAE41003DE5BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D9EC13FED6A74824D23B7E05 /* Pods-CloudMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudMessage.debug.xcconfig"; path = "Target Support Files/Pods-CloudMessage/Pods-CloudMessage.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BB884E2265EA899003DE5BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F68A1587E43C7DADC6E0FB9 /* Pods_CloudMessage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A7F2F550274C774DD578136 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9EC13FED6A74824D23B7E05 /* Pods-CloudMessage.debug.xcconfig */,
+				9337E9E9196FB34DBE2A38E9 /* Pods-CloudMessage.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D1BB4DDA7FCC46BA814B90C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B4F272AD3E527F991FCD5B0 /* Pods_CloudMessage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BB884DC265EA899003DE5BF = {
+			isa = PBXGroup;
+			children = (
+				9BB884E7265EA899003DE5BF /* CloudMessage */,
+				9BB884E6265EA899003DE5BF /* Products */,
+				5A7F2F550274C774DD578136 /* Pods */,
+				6D1BB4DDA7FCC46BA814B90C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9BB884E6265EA899003DE5BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BB884E5265EA899003DE5BF /* CloudMessage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BB884E7265EA899003DE5BF /* CloudMessage */ = {
+			isa = PBXGroup;
+			children = (
+				9BB884FC265EAA7E003DE5BF /* App */,
+				9BB884FF265EAB9B003DE5BF /* CloudMessage.entitlements */,
+				9BB88500265EAE41003DE5BF /* GoogleService-Info.plist */,
+				9BB884FD265EAA99003DE5BF /* ViewController.swift */,
+			);
+			path = CloudMessage;
+			sourceTree = "<group>";
+		};
+		9BB884FC265EAA7E003DE5BF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9BB884E8265EA899003DE5BF /* AppDelegate.swift */,
+				9BB884EA265EA899003DE5BF /* SceneDelegate.swift */,
+				9BB884EE265EA89C003DE5BF /* Assets.xcassets */,
+				9BB884F3265EA89C003DE5BF /* LaunchScreen.storyboard */,
+				9BB884F6265EA89C003DE5BF /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BB884E4265EA899003DE5BF /* CloudMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BB884F9265EA89C003DE5BF /* Build configuration list for PBXNativeTarget "CloudMessage" */;
+			buildPhases = (
+				17561E8870523D3CF5DC64B8 /* [CP] Check Pods Manifest.lock */,
+				9BB884E1265EA899003DE5BF /* Sources */,
+				9BB884E2265EA899003DE5BF /* Frameworks */,
+				9BB884E3265EA899003DE5BF /* Resources */,
+				075183E0BF0C66A11C2052E6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudMessage;
+			productName = CloudMessage;
+			productReference = 9BB884E5265EA899003DE5BF /* CloudMessage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BB884DD265EA899003DE5BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					9BB884E4265EA899003DE5BF = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 9BB884E0265EA899003DE5BF /* Build configuration list for PBXProject "CloudMessage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BB884DC265EA899003DE5BF;
+			productRefGroup = 9BB884E6265EA899003DE5BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BB884E4265EA899003DE5BF /* CloudMessage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BB884E3265EA899003DE5BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB884F5265EA89C003DE5BF /* LaunchScreen.storyboard in Resources */,
+				9BB884EF265EA89C003DE5BF /* Assets.xcassets in Resources */,
+				9BB88501265EAE41003DE5BF /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		075183E0BF0C66A11C2052E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloudMessage/Pods-CloudMessage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloudMessage/Pods-CloudMessage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CloudMessage/Pods-CloudMessage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17561E8870523D3CF5DC64B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudMessage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BB884E1265EA899003DE5BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB884E9265EA899003DE5BF /* AppDelegate.swift in Sources */,
+				9BB884EB265EA899003DE5BF /* SceneDelegate.swift in Sources */,
+				9BB884FE265EAA99003DE5BF /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9BB884F3265EA89C003DE5BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BB884F4265EA89C003DE5BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BB884F7265EA89C003DE5BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BB884F8265EA89C003DE5BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BB884FA265EA89C003DE5BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9EC13FED6A74824D23B7E05 /* Pods-CloudMessage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudMessage/CloudMessage.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = HNKDLWP6FH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CloudMessage/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.jesterz91.CloudMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9BB884FB265EA89C003DE5BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9337E9E9196FB34DBE2A38E9 /* Pods-CloudMessage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudMessage/CloudMessage.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = HNKDLWP6FH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CloudMessage/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.jesterz91.CloudMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BB884E0265EA899003DE5BF /* Build configuration list for PBXProject "CloudMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB884F7265EA89C003DE5BF /* Debug */,
+				9BB884F8265EA89C003DE5BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BB884F9265EA89C003DE5BF /* Build configuration list for PBXNativeTarget "CloudMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB884FA265EA89C003DE5BF /* Debug */,
+				9BB884FB265EA89C003DE5BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BB884DD265EA899003DE5BF /* Project object */;
+}
