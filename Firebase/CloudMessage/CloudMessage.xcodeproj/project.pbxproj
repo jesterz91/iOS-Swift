@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1F68A1587E43C7DADC6E0FB9 /* Pods_CloudMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4F272AD3E527F991FCD5B0 /* Pods_CloudMessage.framework */; };
+		4D82AA9AED0D11784F691498 /* Pods_NotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6610D124FFB668E2AC68FE30 /* Pods_NotificationServiceExtension.framework */; };
+		9BAD8BDB26628413001F8B8A /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8BDA26628413001F8B8A /* NotificationService.swift */; };
+		9BAD8BDF26628413001F8B8A /* NotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9BAD8BD826628413001F8B8A /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9BB884E9265EA899003DE5BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB884E8265EA899003DE5BF /* AppDelegate.swift */; };
 		9BB884EB265EA899003DE5BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB884EA265EA899003DE5BF /* SceneDelegate.swift */; };
 		9BB884EF265EA89C003DE5BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB884EE265EA89C003DE5BF /* Assets.xcassets */; };
@@ -16,9 +19,39 @@
 		9BB88501265EAE41003DE5BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB88500265EAE41003DE5BF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9BAD8BDD26628413001F8B8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BB884DD265EA899003DE5BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BAD8BD726628413001F8B8A;
+			remoteInfo = NotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9BAD8BE026628413001F8B8A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9BAD8BDF26628413001F8B8A /* NotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3B4F272AD3E527F991FCD5B0 /* Pods_CloudMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		546FD11BF02258F9A7800321 /* Pods-NotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		6610D124FFB668E2AC68FE30 /* Pods_NotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6181E7400D79368C991D94 /* Pods-NotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		9337E9E9196FB34DBE2A38E9 /* Pods-CloudMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudMessage.release.xcconfig"; path = "Target Support Files/Pods-CloudMessage/Pods-CloudMessage.release.xcconfig"; sourceTree = "<group>"; };
+		9BAD8BD826628413001F8B8A /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BAD8BDA26628413001F8B8A /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		9BAD8BDC26628413001F8B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BB884E5265EA899003DE5BF /* CloudMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB884E8265EA899003DE5BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB884EA265EA899003DE5BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +65,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9BAD8BD526628413001F8B8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D82AA9AED0D11784F691498 /* Pods_NotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BB884E2265EA899003DE5BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,6 +89,8 @@
 			children = (
 				D9EC13FED6A74824D23B7E05 /* Pods-CloudMessage.debug.xcconfig */,
 				9337E9E9196FB34DBE2A38E9 /* Pods-CloudMessage.release.xcconfig */,
+				546FD11BF02258F9A7800321 /* Pods-NotificationServiceExtension.debug.xcconfig */,
+				7D6181E7400D79368C991D94 /* Pods-NotificationServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -56,14 +99,25 @@
 			isa = PBXGroup;
 			children = (
 				3B4F272AD3E527F991FCD5B0 /* Pods_CloudMessage.framework */,
+				6610D124FFB668E2AC68FE30 /* Pods_NotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BAD8BD926628413001F8B8A /* NotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9BAD8BDA26628413001F8B8A /* NotificationService.swift */,
+				9BAD8BDC26628413001F8B8A /* Info.plist */,
+			);
+			path = NotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 		9BB884DC265EA899003DE5BF = {
 			isa = PBXGroup;
 			children = (
 				9BB884E7265EA899003DE5BF /* CloudMessage */,
+				9BAD8BD926628413001F8B8A /* NotificationServiceExtension */,
 				9BB884E6265EA899003DE5BF /* Products */,
 				5A7F2F550274C774DD578136 /* Pods */,
 				6D1BB4DDA7FCC46BA814B90C /* Frameworks */,
@@ -74,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				9BB884E5265EA899003DE5BF /* CloudMessage.app */,
+				9BAD8BD826628413001F8B8A /* NotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +159,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9BAD8BD726628413001F8B8A /* NotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BAD8BE326628413001F8B8A /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
+			buildPhases = (
+				EB1B7184CEB0A76097EAB753 /* [CP] Check Pods Manifest.lock */,
+				9BAD8BD426628413001F8B8A /* Sources */,
+				9BAD8BD526628413001F8B8A /* Frameworks */,
+				9BAD8BD626628413001F8B8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationServiceExtension;
+			productName = NotificationServiceExtension;
+			productReference = 9BAD8BD826628413001F8B8A /* NotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9BB884E4265EA899003DE5BF /* CloudMessage */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BB884F9265EA89C003DE5BF /* Build configuration list for PBXNativeTarget "CloudMessage" */;
@@ -113,10 +186,12 @@
 				9BB884E2265EA899003DE5BF /* Frameworks */,
 				9BB884E3265EA899003DE5BF /* Resources */,
 				075183E0BF0C66A11C2052E6 /* [CP] Embed Pods Frameworks */,
+				9BAD8BE026628413001F8B8A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9BAD8BDE26628413001F8B8A /* PBXTargetDependency */,
 			);
 			name = CloudMessage;
 			productName = CloudMessage;
@@ -132,6 +207,9 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					9BAD8BD726628413001F8B8A = {
+						CreatedOnToolsVersion = 12.5;
+					};
 					9BB884E4265EA899003DE5BF = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -151,11 +229,19 @@
 			projectRoot = "";
 			targets = (
 				9BB884E4265EA899003DE5BF /* CloudMessage */,
+				9BAD8BD726628413001F8B8A /* NotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9BAD8BD626628413001F8B8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BB884E3265EA899003DE5BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,9 +294,39 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EB1B7184CEB0A76097EAB753 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9BAD8BD426628413001F8B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BAD8BDB26628413001F8B8A /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BB884E1265EA899003DE5BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +338,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BAD8BDE26628413001F8B8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BAD8BD726628413001F8B8A /* NotificationServiceExtension */;
+			targetProxy = 9BAD8BDD26628413001F8B8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9BB884F3265EA89C003DE5BF /* LaunchScreen.storyboard */ = {
@@ -235,6 +359,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9BAD8BE126628413001F8B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 546FD11BF02258F9A7800321 /* Pods-NotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HNKDLWP6FH;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.jesterz91.CloudMessage.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9BAD8BE226628413001F8B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D6181E7400D79368C991D94 /* Pods-NotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HNKDLWP6FH;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.jesterz91.CloudMessage.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		9BB884F7265EA89C003DE5BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -355,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9EC13FED6A74824D23B7E05 /* Pods-CloudMessage.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CloudMessage/CloudMessage.entitlements;
@@ -379,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9337E9E9196FB34DBE2A38E9 /* Pods-CloudMessage.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CloudMessage/CloudMessage.entitlements;
@@ -402,6 +570,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9BAD8BE326628413001F8B8A /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BAD8BE126628413001F8B8A /* Debug */,
+				9BAD8BE226628413001F8B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9BB884E0265EA899003DE5BF /* Build configuration list for PBXProject "CloudMessage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

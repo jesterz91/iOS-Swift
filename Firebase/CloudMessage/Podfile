@@ -8,4 +8,8 @@ target 'CloudMessage' do
   # Pods for CloudMessage
   pod 'Firebase/Messaging'
 
+  target 'NotificationServiceExtension' do
+  inherit! :search_paths
+  end
+
 end
