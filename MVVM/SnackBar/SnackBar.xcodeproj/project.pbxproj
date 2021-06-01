@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3214DF2FB34C9A06241B1896 /* Pods_SnackBarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA496684B7544A71CE1372C /* Pods_SnackBarTests.framework */; };
 		9B693F612631AEA1000C9059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B693F602631AEA1000C9059 /* AppDelegate.swift */; };
 		9B693F632631AEA1000C9059 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B693F622631AEA1000C9059 /* SceneDelegate.swift */; };
 		9B693F6A2631AEA2000C9059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B693F692631AEA2000C9059 /* Assets.xcassets */; };
@@ -32,11 +33,25 @@
 		9BC291CF265CA0D60094EA7C /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC291CE265CA0D60094EA7C /* ViewControllerRepresentable.swift */; };
 		9BC291D1265CA0F20094EA7C /* ViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC291D0265CA0F20094EA7C /* ViewRepresentable.swift */; };
 		9BC291D3265CA10D0094EA7C /* PreviewDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC291D2265CA10D0094EA7C /* PreviewDevice.swift */; };
+		9BF8F7EB266626740057F4F4 /* SnackBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8F7EA266626740057F4F4 /* SnackBarTests.swift */; };
 		A6988AEE43AF6D3224195996 /* Pods_SnackBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF45951D2C1118EC39736319 /* Pods_SnackBar.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9BF8F7ED266626740057F4F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B693F552631AEA1000C9059 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B693F5C2631AEA1000C9059;
+			remoteInfo = SnackBar;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1CA496684B7544A71CE1372C /* Pods_SnackBarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnackBarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		227EC6816A104F98E63E5FE1 /* Pods-SnackBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnackBar.debug.xcconfig"; path = "Target Support Files/Pods-SnackBar/Pods-SnackBar.debug.xcconfig"; sourceTree = "<group>"; };
+		3D4B69928F3D7685C751A8A1 /* Pods-SnackBarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnackBarTests.release.xcconfig"; path = "Target Support Files/Pods-SnackBarTests/Pods-SnackBarTests.release.xcconfig"; sourceTree = "<group>"; };
+		72C9A521C53DAAC108D67285 /* Pods-SnackBarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnackBarTests.debug.xcconfig"; path = "Target Support Files/Pods-SnackBarTests/Pods-SnackBarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B693F5D2631AEA1000C9059 /* SnackBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnackBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B693F602631AEA1000C9059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B693F622631AEA1000C9059 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +79,9 @@
 		9BC291CE265CA0D60094EA7C /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		9BC291D0265CA0F20094EA7C /* ViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRepresentable.swift; sourceTree = "<group>"; };
 		9BC291D2265CA10D0094EA7C /* PreviewDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewDevice.swift; sourceTree = "<group>"; };
+		9BF8F7E8266626740057F4F4 /* SnackBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnackBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BF8F7EA266626740057F4F4 /* SnackBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarTests.swift; sourceTree = "<group>"; };
+		9BF8F7EC266626740057F4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E192F419E3BD9383FB62DAC2 /* Pods-SnackBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnackBar.release.xcconfig"; path = "Target Support Files/Pods-SnackBar/Pods-SnackBar.release.xcconfig"; sourceTree = "<group>"; };
 		EF45951D2C1118EC39736319 /* Pods_SnackBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnackBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +95,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BF8F7E5266626740057F4F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3214DF2FB34C9A06241B1896 /* Pods_SnackBarTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +111,8 @@
 			children = (
 				227EC6816A104F98E63E5FE1 /* Pods-SnackBar.debug.xcconfig */,
 				E192F419E3BD9383FB62DAC2 /* Pods-SnackBar.release.xcconfig */,
+				72C9A521C53DAAC108D67285 /* Pods-SnackBarTests.debug.xcconfig */,
+				3D4B69928F3D7685C751A8A1 /* Pods-SnackBarTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -93,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				9B693F5F2631AEA1000C9059 /* SnackBar */,
+				9BF8F7E9266626740057F4F4 /* SnackBarTests */,
 				9B693F5E2631AEA1000C9059 /* Products */,
 				261D066D63DBCEE71C2BC8C5 /* Pods */,
 				BCC3332B4E581916E7635468 /* Frameworks */,
@@ -103,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				9B693F5D2631AEA1000C9059 /* SnackBar.app */,
+				9BF8F7E8266626740057F4F4 /* SnackBarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,10 +266,20 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		9BF8F7E9266626740057F4F4 /* SnackBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BF8F7EA266626740057F4F4 /* SnackBarTests.swift */,
+				9BF8F7EC266626740057F4F4 /* Info.plist */,
+			);
+			path = SnackBarTests;
+			sourceTree = "<group>";
+		};
 		BCC3332B4E581916E7635468 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				EF45951D2C1118EC39736319 /* Pods_SnackBar.framework */,
+				1CA496684B7544A71CE1372C /* Pods_SnackBarTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -266,17 +306,41 @@
 			productReference = 9B693F5D2631AEA1000C9059 /* SnackBar.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9BF8F7E7266626740057F4F4 /* SnackBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BF8F7F1266626740057F4F4 /* Build configuration list for PBXNativeTarget "SnackBarTests" */;
+			buildPhases = (
+				B52FE9F1DF1A532FAB7CAED2 /* [CP] Check Pods Manifest.lock */,
+				9BF8F7E4266626740057F4F4 /* Sources */,
+				9BF8F7E5266626740057F4F4 /* Frameworks */,
+				9BF8F7E6266626740057F4F4 /* Resources */,
+				098E9390D2788FC34E9FDC5C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BF8F7EE266626740057F4F4 /* PBXTargetDependency */,
+			);
+			name = SnackBarTests;
+			productName = SnackBarTests;
+			productReference = 9BF8F7E8266626740057F4F4 /* SnackBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		9B693F552631AEA1000C9059 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					9B693F5C2631AEA1000C9059 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					9BF8F7E7266626740057F4F4 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 9B693F5C2631AEA1000C9059;
 					};
 				};
 			};
@@ -294,6 +358,7 @@
 			projectRoot = "";
 			targets = (
 				9B693F5C2631AEA1000C9059 /* SnackBar */,
+				9BF8F7E7266626740057F4F4 /* SnackBarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -308,9 +373,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BF8F7E6266626740057F4F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		098E9390D2788FC34E9FDC5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnackBarTests/Pods-SnackBarTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnackBarTests/Pods-SnackBarTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnackBarTests/Pods-SnackBarTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		99D46BF40C381BAFD4E0AA60 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,6 +415,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnackBar/Pods-SnackBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B52FE9F1DF1A532FAB7CAED2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnackBarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EB633FB1AEF3F299747ECE46 /* [CP] Check Pods Manifest.lock */ = {
@@ -383,7 +494,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BF8F7E4266626740057F4F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BF8F7EB266626740057F4F4 /* SnackBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BF8F7EE266626740057F4F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B693F5C2631AEA1000C9059 /* SnackBar */;
+			targetProxy = 9BF8F7ED266626740057F4F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9B693F6B2631AEA2000C9059 /* LaunchScreen.storyboard */ = {
@@ -553,6 +680,48 @@
 			};
 			name = Release;
 		};
+		9BF8F7EF266626740057F4F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72C9A521C53DAAC108D67285 /* Pods-SnackBarTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SnackBarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.jesterz91.SnackBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnackBar.app/SnackBar";
+			};
+			name = Debug;
+		};
+		9BF8F7F0266626740057F4F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D4B69928F3D7685C751A8A1 /* Pods-SnackBarTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SnackBarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.jesterz91.SnackBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnackBar.app/SnackBar";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -570,6 +739,15 @@
 			buildConfigurations = (
 				9B693F722631AEA2000C9059 /* Debug */,
 				9B693F732631AEA2000C9059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BF8F7F1266626740057F4F4 /* Build configuration list for PBXNativeTarget "SnackBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BF8F7EF266626740057F4F4 /* Debug */,
+				9BF8F7F0266626740057F4F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

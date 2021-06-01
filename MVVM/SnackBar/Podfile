@@ -11,4 +11,11 @@ target 'SnackBar' do
   pod 'Moya/RxSwift'
   # pod 'Then'
   # pod 'SnapKit'
+
+  target 'SnackBarTests' do
+  inherit! :search_paths
+    pod 'RxBlocking'
+    pod 'RxTest'
+  end
+
 end
